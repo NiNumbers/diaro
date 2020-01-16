@@ -1,3 +1,5 @@
-from extraction.extract_patterns import screendata, loaddata
+from extraction.extract_patterns import screendata, loaddata, searchpattern, extractdate
 
-diarotext = loaddata()
+diarotext = searchpattern(r'raus')
+
+print(diarotext)
